@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="description"
         content="Increase the flow of customers and sales for your business with digital marketing & growth solutions." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solutions for Your Business</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,6 +34,7 @@
                     </li>
                 </ul>
             </nav>
+
             <address class="address-header">
                 <ul class="list-address-header">
                     <li class="item-address-header"><a class="link-address-header"
@@ -41,6 +43,72 @@
                             111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="burger-button-header" type="button" data-menu-open>
+                <svg class="burger-icon-header" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-button"></use>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close-button" type="button" data-menu-close>
+                    <svg class="icon-mobile-menu-close-button" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <ul class="list-nav-mobile-menu">
+                    <li class="item-nav-mobile-menu "><a class="link-nav-mobile-menu active-link-nav-mobile-menu"
+                            href="./index.html">Studio</a></li>
+                    <li class="item-nav-mobile-menu"><a class="link-nav-mobile-menu" href="">Portfolio</a></li>
+                    <li class="item-nav-mobile-menu"><a class="link-nav-mobile-menu" href="">Contacts</a>
+                    </li>
+                </ul>
+
+                <address class="address-mobile-menu">
+                    <ul class="list-address-mobile-menu">
+                        <li class="item-address-mobile-menu"><a class="link-address-mobile-menu"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item-address-mobile-menu"><a class="link-address-mobile-menu"
+                                href="tel:+110001111111">+11
+                                (000)
+                                111-11-11</a></li>
+                    </ul>
+                </address>
+
+                <ul class="list-social-link-mobile-menu">
+                    <li class="item-social-link-mobile-menu">
+                        <a class="social-link-mobile-menu" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Instagram" class="icon-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-link-mobile-menu">
+                        <a class="social-link-mobile-menu" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Twitter" class="icon-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-link-mobile-menu">
+                        <a class="social-link-mobile-menu" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Facebook" class="icon-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item-social-link-mobile-menu">
+                        <a class="social-link-mobile-menu" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Linkedin" class="icon-mobile-menu" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -58,7 +126,7 @@
                 <ul class="list-about-company">
                     <Li class="item-about-company">
                         <div class="div-svg-about-company">
-                            <svg class="svg-about-company" width="64" height="64">
+                            <svg aria-label="Icon antenna" class="svg-about-company" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
@@ -70,7 +138,7 @@
                     </Li>
                     <Li class="item-about-company">
                         <div class="div-svg-about-company">
-                            <svg class="svg-about-company" width="64" height="64">
+                            <svg aria-label="Icon clock" class="svg-about-company" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
@@ -83,7 +151,7 @@
                     </Li>
                     <Li class="item-about-company">
                         <div class="div-svg-about-company">
-                            <svg class="svg-about-company" width="64" height="64">
+                            <svg aria-label="Icon diagram" class="svg-about-company" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
@@ -95,7 +163,7 @@
                     </Li>
                     <Li class="item-about-company">
                         <div class="div-svg-about-company">
-                            <svg class="svg-about-company" width="64" height="64">
+                            <svg aria-label="Icon astronaut" class="svg-about-company" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
@@ -110,40 +178,54 @@
         </section>
 
         <section class="team">
-            <div class="container">
+            <div class="container team-container">
                 <H2 class="title-team">Our Team</H2>
                 <ul class="list-team">
                     <li class="item-team">
-                        <img class="photo-worker" src="./images/man-1.jpg" width="264" height="260"
-                            alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
+                        <picture>
+                            <source srcset="
+                                                 ./images/man-1.jpg     1x,
+                                                 ./images/man-1@2x.jpg  2x
+                                               " media="(min-width: 1158px)" />
+                            <source srcset="
+                                                 ./images/man-1.jpg     1x,
+                                                 ./images/man-1@2x.jpg  2x
+                                               " media="(min-width: 768px)" />
+                            <source srcset="
+                                                 ./images/man-1.jpg     1x,
+                                                 ./images/man-1@2x.jpg  2x
+                                               " media="(max-width: 767px)" />
+                            <img class="photo-worker" src="./images/man-1.jpg"
+                                alt="A dark-haired man with a beard and mustache, wearing a blue shirt." />
+                        </picture>
                         <div class="div-worker">
                             <h3 class="title-item-team">Mark Guerrero</h3>
                             <p class="text-item-team">Product Designer</p>
                             <ul class="list-social-link-team">
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Instagram" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Twitter" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Facebook" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Linkedin" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -152,36 +234,51 @@
                         </div>
                     </li>
                     <li class="item-team">
-                        <img class="photo-worker" src="./images/man-2.jpg" width="264" height="260"
-                            alt="A blond man with a beard and mustache, wearing a blue shirt." />
+                        <picture>
+                            <source srcset="
+                                                 ./images/man-2.jpg     1x,
+                                                 ./images/man-2@2x.jpg  2x
+                                               " media="(min-width: 1158px)" />
+                            <source srcset="
+                                                 ./images/man-2.jpg     1x,
+                                                 ./images/man-2@2x.jpg  2x
+                                               " media="(min-width: 768px)" />
+                            <source srcset="
+                                                 ./images/man-2.jpg     1x,
+                                                 ./images/man-2@2x.jpg  2x
+                                               " media="(max-width: 767px)" />
+                            <img class="photo-worker" src="./images/man-2.jpg"
+                                alt="A blond man with a beard and mustache, wearing a blue shirt." />
+                        </picture>
+
                         <div class="div-worker">
                             <h3 class="title-item-team">Tom Ford</h3>
                             <p class="text-item-team">Frontend Developer</p>
                             <ul class="list-social-link-team">
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Instagram" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Twitter" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Facebook" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Linkedin" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -190,36 +287,50 @@
                         </div>
                     </li>
                     <li class="item-team">
-                        <img class="photo-worker" src="./images/girl.jpg" width="264" height="260"
-                            alt="A girl with long hair is wearing a pink sweater." />
+                        <picture>
+                            <source srcset="
+                                                 ./images/girl.jpg     1x,
+                                                 ./images/girl@2x.jpg  2x
+                                               " media="(min-width: 1158px)" />
+                            <source srcset="
+                                                 ./images/girl.jpg     1x,
+                                                 ./images/girl@2x.jpg  2x
+                                               " media="(min-width: 768px)" />
+                            <source srcset="
+                                                 ./images/girl.jpg     1x,
+                                                 ./images/girl@2x.jpg  2x
+                                               " media="(max-width: 767px)" />
+                            <img class="photo-worker" src="./images/girl.jpg"
+                                alt="A girl with long hair is wearing a pink sweater." />
+                        </picture>
                         <div class="div-worker">
                             <h3 class="title-item-team">Camila Garcia</h3>
                             <p class="text-item-team">Marketing</p>
                             <ul class="list-social-link-team">
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Instagram" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Twitter" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Facebook" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Linkedin" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -228,36 +339,50 @@
                         </div>
                     </li>
                     <li class="item-team">
-                        <img class="photo-worker" src="./images/men-3.jpg" width="264" height="260"
-                            alt="Dark-haired guy with a beard and mustache in a gray sweater" />
+                        <picture>
+                            <source srcset="
+                                                 ./images/man-3.jpg     1x,
+                                                 ./images/man-3@2x.jpg  2x
+                                               " media="(min-width: 1158px)" />
+                            <source srcset="
+                                                 ./images/man-3.jpg     1x,
+                                                 ./images/man-3@2x.jpg  2x
+                                               " media="(min-width: 768px)" />
+                            <source srcset="
+                                                 ./images/man-3.jpg     1x,
+                                                 ./images/man-3@2x.jpg  2x
+                                               " media="(max-width: 767px)" />
+                            <img class="photo-worker" src="./images/man-3.jpg"
+                                alt="Dark-haired guy with a beard and mustache in a gray sweater" />
+                        </picture>
                         <div class="div-worker">
                             <h3 class="title-item-team">Daniel Wilson</h3>
                             <p class="text-item-team">UI Designer</p>
                             <ul class="list-social-link-team">
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Instagram" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Twitter" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Facebook" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="item-social-link-team">
-                                    <a class="social-link-team" href="#" target="_blank">
-                                        <svg class="icon-team" width="16" height="16">
+                                    <a class="social-link-team" href="#" target="_blank" rel="noopener noreferrer">
+                                        <svg aria-label="Icon Linkedin" class="icon-team" width="16" height="16">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
                                     </a>
@@ -275,7 +400,21 @@
                 <ul class="list-portfolio">
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/banking-app.jpg" width="360" height="300" alt="Banking App" />
+                            <picture>
+                                <source srcset="
+                                                 ./images/banking-app-desk.jpg        1x,
+                                                 ./images/banking-app-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/banking-app-tab.jpg         1x,
+                                                 ./images/banking-app-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/banking-app-mobile.jpg      1x,
+                                                 ./images/banking-app-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/banking-app-mobile.jpg" alt="Banking App" />
+                            </picture>
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -289,7 +428,22 @@
                     </li>
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/cashless-payment.jpg" width="360" height="300" alt="Cashless Payment" />
+                            <picture>
+                                <source srcset="
+                                                 ./images/cashless-payment-desk.jpg        1x,
+                                                 ./images/cashless-payment-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/cashless-payment-tab.jpg         1x,
+                                                 ./images/cashless-payment-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/cashless-payment-mobile.jpg      1x,
+                                                 ./images/cashless-payment-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/cashless-payment-mobile.jpg"
+                                    alt="Cashless Payment" />
+                            </picture>
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -303,7 +457,22 @@
                     </li>
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/meditation-app.jpg" width="360" height="300" alt="Meditation App" />
+                            <picture>
+                                <source srcset="
+                                                 ./images/meditation-app-desk.jpg        1x,
+                                                 ./images/meditation-app-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/meditation-app-tab.jpg         1x,
+                                                 ./images/meditation-app-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/meditation-app-mobile.jpg      1x,
+                                                 ./images/meditation-app-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/meditation-app-mobile.jpg"
+                                    alt="Meditation App" />
+                            </picture>
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -317,7 +486,22 @@
                     </li>
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/taxi-service.jpg" width="360" height="300" alt="Taxi Service" />
+                            <picture>
+                                <source srcset="
+                                                 ./images/taxi-service-desk.jpg        1x,
+                                                 ./images/taxi-service-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/taxi-service-tab.jpg         1x,
+                                                 ./images/taxi-service-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/taxi-service-mobile.jpg      1x,
+                                                 ./images/taxi-service-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/taxi-service-mobile.jpg"
+                                    alt="Taxi Service" />
+                            </picture>
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -331,8 +515,24 @@
                     </li>
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/screen-illustrations.jpg" width="360" height="300"
-                                alt="Screen Illustrations" />
+
+                            <picture>
+                                <source srcset="
+                                                 ./images/screen-illustrations-desk.jpg        1x,
+                                                 ./images/screen-illustrations-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/screen-illustrations-tab.jpg         1x,
+                                                 ./images/screen-illustrations-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/screen-illustrations-mobile.jpg      1x,
+                                                 ./images/screen-illustrations-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/screen-illustrations-mobile.jpg"
+                                    alt="Screen Illustrations" />
+                            </picture>
+
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -346,8 +546,24 @@
                     </li>
                     <li class="item-portfolio">
                         <div class="div-hover-portfolio">
-                            <img src="./images/girl-in-an-orange-sweater.jpg" width="360" height="300"
-                                alt="Girl in an orange sweater" />
+
+                            <picture>
+                                <source srcset="
+                                                 ./images/girl-in-an-orange-sweater-desk.jpg        1x,
+                                                 ./images/girl-in-an-orange-sweater-desk@2x.jpg     2x
+                                               " media="(min-width: 1158px)" />
+                                <source srcset="
+                                                 ./images/girl-in-an-orange-sweater-tab.jpg         1x,
+                                                 ./images/girl-in-an-orange-sweater-tab@2x.jpg      2x
+                                               " media="(min-width: 768px)" />
+                                <source srcset="
+                                                 ./images/girl-in-an-orange-sweater-mobile.jpg      1x,
+                                                 ./images/girl-in-an-orange-sweater-mobile@2x.jpg   2x
+                                               " media="(max-width: 767px)" />
+                                <img class="photo-portfolio" src="./images/girl-in-an-orange-sweater-mobile.jpg"
+                                    alt="Girl in an orange sweater" />
+                            </picture>
+
                             <p class="text-hover-portfolio">14 Stylish and User-Friendly App Design Concepts · Task
                                 Manager
                                 App · Calorie Tracker App
@@ -374,33 +590,33 @@
                 </p>
             </div>
 
-            <div>
+            <div class="social-footer">
                 <p class="title-list-social-footer">Social media</p>
                 <ul class="list-social-link-footer">
                     <li class="item-social-link-footer">
-                        <a class="social-link-footer" href="#" target="_blank">
-                            <svg class="icon-footer" width="24" height="24">
+                        <a class="social-link-footer" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Instagram" class="icon-footer" width="24" height="24">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social-link-footer">
-                        <a class="social-link-footer" href="#" target="_blank">
-                            <svg class="icon-footer" width="24" height="24">
+                        <a class="social-link-footer" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Twitter" class="icon-footer" width="24" height="24">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social-link-footer">
-                        <a class="social-link-footer" href="#" target="_blank">
-                            <svg class="icon-footer" width="24" height="24">
+                        <a class="social-link-footer" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Facebook" class="icon-footer" width="24" height="24">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="item-social-link-footer">
-                        <a class="social-link-footer" href="#" target="_blank">
-                            <svg class="icon-footer" width="24" height="24">
+                        <a class="social-link-footer" href="#" target="_blank" rel="noopener noreferrer">
+                            <svg aria-label="Icon Linkedin" class="icon-footer" width="24" height="24">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -475,8 +691,11 @@
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the
-                        <a class="privacy-policy-link" href="#">Privacy Policy</a>
+                        <span>
+                            I accept the terms and conditions of the
+                            <a class="privacy-policy-link" href="#">Privacy Policy</a>
+                        </span>
+
                     </label>
                 </div>
                 <button class="modal-form-button" type="submit">
@@ -487,6 +706,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
