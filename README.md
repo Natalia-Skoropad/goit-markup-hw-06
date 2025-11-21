@@ -8,6 +8,8 @@
   <li>Team section</li>
   <li>Projects section</li>
   <li>Feedback form</li>
+  <li>Optimized project images</li>
+  <li>Optimized the icon sprite</li>
 </ul>
 
 <h2>Technologies used</h2>
